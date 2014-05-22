@@ -17,7 +17,7 @@ ZSH_THEME="robbyrussell"
 source "$HOME/.dotfiles/z/z.sh"
 
 # gh
-eval "$(gh alias -s)"
+# eval "$(gh alias -s)"
 
 # Global aliases
 alias ctags="`brew --prefix`/bin/ctags"
@@ -30,6 +30,7 @@ alias -g mux='tmuxinator'
 alias -g tks='tmux kill-session'
 alias -g rmswp='find . -name ".*.sw*" | xargs rm -f'
 alias -g s3='s3cmd'
+alias -g goc='cd $GOCODE'
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -40,7 +41,7 @@ source $ZSH/oh-my-zsh.sh
 # Disable auto correct
 unsetopt correct_all
 
-export GOPATH=$HOME/code/gocode
+export GOPATH=$HOME/Development/Go
 export GOCODE=$GOPATH/src/github.com/nerdotry
 export PATH=$PATH:$GOPATH/bin
 

@@ -18,7 +18,7 @@ def link(path, link_name)
   FileUtils.ln_s(path, link_name)
 end
 
-puts "Bootstrapping Jeremy's Dotfiles..."
+puts "Bootstrapping Ian's Dotfiles..."
 link "~/.dotfiles/vim/.vimrc", "~/.vimrc"
 link "~/.dotfiles/git/.gitconfig", "~/.gitconfig"
 link "~/.dotfiles/zsh/.zshrc", "~/.zshrc"

@@ -41,6 +41,7 @@ source $ZSH/oh-my-zsh.sh
 # Disable auto correct
 unsetopt correct_all
 
+export GOROOT=`go env GOROOT`
 export GOPATH=$HOME/Development/Go
 export GOCODE=$GOPATH/src/github.com/nerdotry
 export PATH=$PATH:$GOPATH/bin

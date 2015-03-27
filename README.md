@@ -1,4 +1,5 @@
-dotfiles
+Macbook dotfiles
 ========
 
-Ian's dotfiles
+Todo:
+Create better install/update script
